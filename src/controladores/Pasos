@@ -1,0 +1,46 @@
+1. Crear JFrame principal
+   - Configurar tamaño, título con usuario y fecha
+   - Añadir JTabbedPane con pestañas: Inicio, Usuarios, Almacen, Stock País
+
+2. Panel Inicio
+   - JLabel central “Login Correcto”
+
+3. Panel Usuarios
+   - JTextPane para listar empleados
+   - Botón Listar: muestra empleados
+   - Botón Enviar: agrega empleado (solo admin)
+   - Botón Eliminar: borra empleado (solo admin)
+   - Campos para usuario y departamento
+   - Posibles errores: permisos, conexión
+
+4. Panel Productos
+   - JTextPane para listar productos
+   - Botón Listar: muestra productos con precio, cantidad, país y almacén
+   - Campos txtProducto, txtPrecio, txtCantidad
+   - ComboBox estático de almacenes (ID - Nombre - País)
+   - Botón Enviar: agrega producto al almacén seleccionado
+   - Botón Eliminar: borra producto por nombre
+   - Botón Aplicar descuento: reduce precio según porcentaje
+   - Posibles errores: números mal ingresados, producto no encontrado
+
+5. Panel Stock País
+   - JTextPane: muestra productos filtrados por país
+   - JLabel: muestra stock total
+   - ComboBox estático de países
+   - JLabel: almacén con más unidades
+   - JTextPane: almacenes vacíos
+   - Botón Listar por país: actualiza todo
+   - Posibles errores: país no encontrado, SQL mal escrito
+
+6. Errores que me han pasao
+   - SQLException por nombres de columnas o tablas incorrectas
+   - Números mal formateados
+   - ComboBox vacío o mal parseado
+   - Botones que no se muestran por bounds mal configurados
+   - Olvidar cerrar ResultSet/PreparedStatement
+
+7. Notas rápidas
+   - ComboBox estáticos simplifican pruebas, hacerlo dinamico es una paranoia
+   - Mensajes de JOptionPane para confirmar acciones porque me da palo no saber que esta pasando
+   - SQL con PreparedStatement copia pega del profeso
+   - Futuras mejoras: ComboBox dinámico, revertir descuentos (spoiler no lo hare pero hubiera estao guapo) 
