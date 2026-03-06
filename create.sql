@@ -9,6 +9,9 @@ CREATE TABLE almacen (
     pais VARCHAR(100) NOT NULL
 );
 
+INSERT INTO almacen (nombre, pais) VALUES ('Madrid', 'España'), ('Londres', 'Inglaterra'), ('Berlin', 'Alemania'), ('Barcelona', 'España'), ('Manchester', 'Inglaterra'), ('Weimar', 'Alemania');
+
+
 -- TABLA EMPLEADOS
 CREATE TABLE empleados (
     id INT AUTO_INCREMENT PRIMARY KEY,
